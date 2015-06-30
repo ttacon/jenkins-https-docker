@@ -1,5 +1,7 @@
 FROM jenkins:1.565.3
 
+MAINTAINER Trey Tacon <ttacon@gmail.com>
+
 COPY https.pem /var/lib/jenkins/cert
 COPY https.key /var/lib/jenkins/pk
 ENV JENKINS_OPTS --httpPort=-1 \
